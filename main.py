@@ -21,8 +21,8 @@ income_metrics = ['Revenue', 'Gross Profit', 'Operating Income', 'Net Income', '
 balance = []
 cashflow = []
 
-symbols = ["FPT", "pdn"]
-period_type = 'trailing' # trailing
+symbols = ["FPT", "pdn"] # Import list from companies in HOSE.csv
+period_type = 'trailing'
 
 report_path = 'output/Companies Reports.xlsx'
 writer = pd.ExcelWriter(report_path, engine = 'xlsxwriter')
